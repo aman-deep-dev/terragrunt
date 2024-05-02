@@ -1,9 +1,5 @@
-output "database_subnets" {
-  value = module.vpc.database_subnets
+output "public_subnets" {
+  value = module.vpc.public_subnets
 }
 
-output "default_security_group_id" {
-  value = module.vpc.default_security_group_id
-
-}
 

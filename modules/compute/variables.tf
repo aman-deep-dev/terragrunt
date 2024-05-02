@@ -1,7 +1,7 @@
-variable "database_subnets" {
+variable "public_subnets" {
   type = list(string)
 }
 
-variable "default_security_group_id" {
-  type = string
-}
+# variable "default_security_group_id" {
+#   type = string
+# }

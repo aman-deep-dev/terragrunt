@@ -20,5 +20,6 @@ module "vpc" {
 
 module "compute" {
   source = "./modules/compute"
+  public_subnets = module.vpc.public_subnets
 }
 
