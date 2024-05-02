@@ -13,3 +13,7 @@ provider "aws" {
   profile = "ev-terragrunt-user"
 }
 
+
+module "vpc" {
+  source = "./modules/network"
+}
