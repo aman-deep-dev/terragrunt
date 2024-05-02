@@ -17,3 +17,8 @@ provider "aws" {
 module "vpc" {
   source = "./modules/network"
 }
+
+module "compute" {
+  source = "./modules/compute"
+}
+
