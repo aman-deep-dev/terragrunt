@@ -12,14 +12,3 @@ provider "aws" {
   region  = "us-east-1"
   profile = "ev-terragrunt-user"
 }
-
-
-module "vpc" {
-  source = "./modules/network"
-}
-
-module "compute" {
-  source = "./modules/compute"
-  public_subnets = module.vpc.public_subnets
-}
-

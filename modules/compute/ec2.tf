@@ -7,10 +7,10 @@ module "ec2_instance" {
   key_name      = "terragrunt-dev"
   monitoring    = false
   #   vpc_security_group_ids = ["var.default_security_group_id"]
-  subnet_id              = var.public_subnets[0]
+  subnet_id = var.public_subnets[0]
 
   tags = {
     Terraform   = "true"
-    Environment = "dev"
+    Environment = "staging"
   }
 }
