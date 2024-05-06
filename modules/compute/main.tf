@@ -12,8 +12,3 @@ provider "aws" {
   region  = "us-east-1"
   profile = "ev-terragrunt-user"
 }
-
-
-module "vpc" {
-  source = "./modules/network"
-}
