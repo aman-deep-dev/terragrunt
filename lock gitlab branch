@@ -1,0 +1,9 @@
+curl --request PUT \
+  --header "PRIVATE-TOKEN: glpat-abc1234567890" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "allow_force_push": false,
+    "allowed_to_merge": [],
+    "allowed_to_push": []
+  }' \
+  "https://gitlab.com/api/v4/projects/12345/protected_branches/main"
